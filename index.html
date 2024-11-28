@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="blur"></div>
+    
+        <div class="nav-bar">
+          <!--========================================-->
+          <div class="sidebar">
+
+              <img class="close" src="images/icon-close-menu.svg" onclick="hideSidebar()">
+              <ul>
+                <!--======================================-->
+                <div class="sidedrop1">
+                  <li onclick="toggleDropdown3()">Features<img class="rotate" src="images/icon-arrow-down.svg"></li> 
+                </div>
+
+                  <div class="sidebar-drop1">
+                    <div class="left-row">
+                      <img src="images/icon-todo.svg">
+                      <img src="images/icon-calendar.svg">
+                      <img src="images/icon-reminders.svg">
+                      <img src="images/icon-planning.svg">
+                    </div>
+                    <div class="right-row">
+                      <p>Todo list</p>
+                      <p>Calendar</p>
+                      <p>Reminders</p>
+                      <p>Planning</p>
+                    </div>
+                  </div>
+            <!--=======================================================-->
+
+                  <li onclick="toggleDropdown4()">Company<img class="rotate2" src="images/icon-arrow-down.svg"></li>
+                  <div class="sidebar-drop2">
+                    <p>History</p>
+                    <p>Our Team</p>
+                    <p>Blog</p>
+                  </div>
+                  <li>Careers</li>
+                  <li>About</li>
+                
+                  <div class="sidebtn">
+                    <button class="side-btn1">Login</button>
+                    <button class="side-btn2">Register</button>
+                  </div>
+
+              </ul>
+             
+             
+             
+          </div>
+          <!--===================================================-->
+            <img src="images/logo.svg" class="logo">
+            <nav>
+                <ul>
+                  <!-- first dropdown -->
+                          <div class="dropdown">
+                            <div class="toggle2">
+                              <li  onclick="toggleDropdown1()">Features<img class="rotate"  src="images/icon-arrow-down.svg"></li> 
+
+                            </div>
+                                  <div class="dropdown-menu">
+                                    <div class="left-row">
+                                      <img src="images/icon-todo.svg">
+                                      <img src="images/icon-calendar.svg">
+                                      <img src="images/icon-reminders.svg">
+                                      <img src="images/icon-planning.svg">
+                                    </div>
+                                    <div class="right-row">
+                                      <p>Todo list</p>
+                                      <p>Calendar</p>
+                                      <p>Reminders</p>
+                                      <p>Planning</p>
+                                    </div>
+                                  </div>
+                          </div>
+                          <!--second dropdown-->
+                          <div class="dropdown">
+
+                            <div class="toggle">
+                              <li onclick=" toggleDropdown2()">Company<img class="rotate2" src="images/icon-arrow-down.svg"></li>
+                            </div>
+                            
+                                <div class="dropdown-menu2">
+                                  <p>History</p>
+                                  <p>Our Team</p>
+                                  <p>Blog</p>
+                                </div>
+                          </div>
+                    <li>Careers</li>
+                    <li>About</li>
+
+                </ul>
+            </nav>
+            <button class="btn1">Login</button>
+            <button class="btn2">Register</button>
+            <img style="z-index: 4;" class="menu-icon" src="images/icon-menu.svg" onclick="showSidebar()">
+        </div>
+
+        <section class="section-1">
+          <div class="info-section">
+            <h1>Make <br>remote work</h1>
+            <p>
+              Get yor team sync,no matter youer location.
+              Streaminline processes,create team rituals,and 
+              watch productivities soar.
+            </p>
+            <button>Learn more</button>
+            <div class="icon-row">
+              <img src="images/client-databiz.svg">
+              <img src="images/client-audiophile.svg">
+              <img src="images/client-meet.svg">
+              <img src="images/client-maker.svg">
+
+            </div>
+          </div>
+
+          <picture class="hero-section">
+            <source  media="(max-width:500px)"
+                     srcset="images/image-hero-mobile.png 300w">
+            <source  media="(max-width:700px)"
+                      srcset="images/image-hero-desktop.png 700w ">
+              <img src="images/image-hero-desktop.png" alt="">
+          </picture>
+
+        </section>
+  </div>
+
+ <script src="index.js"></script>
+ <script src="script.js"></script>
+</body>
+</html>
